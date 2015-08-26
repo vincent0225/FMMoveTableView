@@ -20,9 +20,9 @@
 
 - (void)prepareForMove
 {
-    self.textLabel.text = @"";
-    self.detailTextLabel.text = @"";
-    self.imageView.image = nil;
+//    self.textLabel.text = @"";
+//    self.detailTextLabel.text = @"";
+//    self.imageView.image = nil;
 }
 
 
