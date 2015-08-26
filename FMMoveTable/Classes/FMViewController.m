@@ -28,6 +28,11 @@ static NSString *sCellIdentifier;
 #define kIndexYearOfMovie		1
 #define kIndexRowHeightOfMovie  2
 
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    ((FMMoveTableView*) self.tableView).touchableAreaWidth = 50;
+}
 
 + (void)initialize
 {

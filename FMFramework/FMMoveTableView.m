@@ -94,6 +94,9 @@
 	if ([gestureRecognizer isEqual:self.movingGestureRecognizer])
 	{
         CGPoint touchPoint = [gestureRecognizer locationInView:self];
+        if (self.touchableAreaWidth > 0 && touchPoint.x > self.touchableAreaWidth) {
+            return NO;
+        }
         NSIndexPath *touchedIndexPath = [self indexPathForRowAtPoint:touchPoint];
         shouldBegin = [self isValidIndexPath:touchedIndexPath];
 

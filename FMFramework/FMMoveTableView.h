@@ -69,6 +69,9 @@
  */
 @interface FMMoveTableView : UITableView <UIGestureRecognizerDelegate>
 
+//Vincent, adjust the touchable area..
+@property (assign,nonatomic) float touchableAreaWidth;
+
 /**
  * The object that acts as the data source of the receiving table view.
  */
